@@ -7,7 +7,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-  service: any;
+  service: any = {};
 
   constructor() { }
 
@@ -15,8 +15,8 @@ export class EmployeeComponent implements OnInit {
     this.resetForm();
   }
   resetForm(form?: NgForm){
-    if(form!=null)
-    form.resetForm();
+//     if(form!=null)
+//     form.resetForm();
     this.service.formData={
       id:null,
       fullName:'',
